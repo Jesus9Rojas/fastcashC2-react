@@ -61,7 +61,7 @@ const Login = () => {
             const nombreLeido = data.nombreCompleto || data.NombreCompleto;
             const rolLeido = data.rol || data.Rol;
             const userLeido = data.username || data.Username;
-            const tokenLeido = data.token || data.Token || 'token-temporal';
+            const tokenLeido = data.token || data.Token || 'token-temporal-hasta-implementar-jwt';
 
             if (!idLeido) {
                 throw new Error("El servidor no devolvió un ID de usuario válido.");
