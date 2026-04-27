@@ -26,8 +26,19 @@ const CierreCaja = lazy(() => import('./pages/CierreCaja'));
 
 // Componente de carga rápida entre transiciones de pantalla
 const LoadingFallback = () => (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
-        <i className="fa-solid fa-circle-notch fa-spin fa-2x" style={{ color: 'var(--color-primario)' }}></i>
+    <div style={{ 
+        position: 'fixed',    // <--- Lo fijamos a la pantalla
+        top: 0, 
+        left: 0,
+        width: '100vw',       // <--- 100% del ancho de la pantalla
+        height: '100vh',      // <--- 100% del alto de la pantalla
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        backgroundColor: '#09090b', // <--- Fondo oscuro para que combine con el diseño moderno
+        zIndex: 9999          // <--- Nos aseguramos que esté por encima de todo
+    }}>
+        <i className="fa-solid fa-circle-notch fa-spin fa-3x" style={{ color: 'var(--color-primario)' }}></i>
     </div>
 );
 

@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import logoAnimado from '../assets/img/img/logorojasya.png'; // Traemos tu logo
+import logoAnimado from '../assets/img/img/logorojasya2.png'; // Traemos tu logo
 
 // 1. Calculamos el saludo FUERA del efecto para evitar dobles renderizados
 const obtenerSaludo = () => {
