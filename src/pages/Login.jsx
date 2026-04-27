@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import api from '../services/api';
 import '../styles/login.css';
-import logo from '../assets/img/img/LogoMas1.png'; 
+import logo from '../assets/img/img/logorojasya2.png'; 
 
 function sanitizarEntrada(texto) {
     if (!texto) return '';
@@ -234,7 +234,7 @@ const Login = () => {
                             </form>
 
                             <div className="login-footer-modern">
-                                <p>© {new Date().getFullYear()} Rojas Más. Todos los derechos reservados.</p>
+                                <p>© {new Date().getFullYear()} Rojas Ya. Todos los derechos reservados.</p>
                             </div>
                             
                         </div>

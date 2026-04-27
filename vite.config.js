@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react(),
     nodePolyfills(),
   ],
-  base: '/fastcashC3-react/',
+  base: '/fastcashC2-react/',
   
 })
